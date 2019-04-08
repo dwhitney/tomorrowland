@@ -1,0 +1,25 @@
+{
+  "name": "tomorrowland",
+  "version": "0.0.1",
+  "description": "",
+  "files": [
+    "lib",
+    "es6"
+  ],
+  "main": "lib/index.js",
+  "module": "es6/index.js",
+  "typings": "lib/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "clean": "rimraf lib/* es6/*",
+    "build": "npm run clean && tsc && tsc -p tsconfig.es6.json"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.21",
+    "rimraf": "2.6.2",
+    "typescript": "^3.4.1"
+  },
+  "tags": [],
+  "keywords": [],
+  "dependencies": {}
+}
